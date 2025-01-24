@@ -15,7 +15,7 @@ for _,v in pairs(dx9.GetChildren(players)) do
                     local pos2 = dx9.WorldToScreen({pos.x, pos.y, pos.z})
                     if nameESP then
                     dx9.DrawCircle({pos2.x, pos2.y}, {0,0,255}, 8)
-                    dx9.DrawString({pos2.x - 30, pos2.y + -30}, {255,255,255}, plrName)
+                    dx9.DrawString({pos2.x - (dx9.CalcTextWidth(plrName) / 2), pos2.y + -30}, {255,255,255}, plrName)
                     else
                         dx9.DrawCircle({pos2.x, pos2.y}, {0,0,255}, 8)
                     end
